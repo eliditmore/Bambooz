@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Big Bamboo Seafood Shack</title>
+		<meta charset=utf-8>
+        <meta name="description" content="Restaurant Website and Gallery Template with jQuery and Google Maps" />
+        <meta name="keywords" content="jquery, gallery, images, css3, html5, photography, website, template, google maps, sliding, background"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis+Light' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    </head>
+    <body>
+		<div id="map"></div>
+		<div id="bf_container" class="bf_container">
+			<div id="bf_background" class="bf_background">
+				<img src="images/background/default.jpg" alt="image1" style="display:none;"/>
+				<div class="bf_overlay"></div>
+			</div>
+			<div id="bf_page_menu" class="bf_menu" >
+				<h1 class="title">Big Bamboo<span>Seafood Shack</span></h1>
+				<ul>
+					<li><a href="#" data-content="home"><span class="bf_hover"></span><span>Welcome</span></a></li>
+					<li><a href="#" data-content="about"><span class="bf_hover"></span><span>About us</span></a></li>
+					<li><a href="#" data-content="menu"><span class="bf_hover"></span><span>Our Menu</span></a></li>
+					<li><a href="#" data-content="visit"><span class="bf_hover"></span><span>Visit us</span></a></li>
+                    <li><a href="#" data-content="saying"><span class="bf_hover"></span><span>What they're saying!</span></a></li>
+				</ul>
+			</div>
+			<div class="bf_page" id="home" style="display:block;">
+				<div class="bf_content_text">
+					<h2>Welcome</h2>
+					<p>To Big Bamboo, located on Vessup Bay in Red Hook, a short walking distance from the ferry dock. It's where The Caribbean Sea & the Atlantic meet! You'll find palm trees and mangroves surrounding the bay. This natural safe harbor for vessels, was used by many sailors for generations to their boats every night or for extended stays.</p>
+					<p> There's a few small pocket beaches tucked away between the mangroves. Stories were told of an old make shift tum shack that was built to house pirates, salty dogs and sailors where they gathered to drink rum, chase wenches, eat grub and sing songs - yo-ho, yo-ho a pirates life for me!</p>
+                    <p>Well not much has changed since then... They're all still right here... years have long gone by and the names have changed but the debauchery still continues day and night... and the little rum shack was just a distant memory.</p>
+				</div>
+			</div>
+			<div class="bf_page" id="about">
+				<div class="bf_content_text">
+					<h2>About us</h2>
+					<p>In 1995 hurricane Marilyn blew through St. Thomas destroying most of the island, including, the little gas station named "hearts." As the years past, the abandoned gas station caught my eye. I envisioned the old rum shack - Can you see what I saw? Guess what... now it's the home of "Big Bamboo burger & seafood shack" ... Surrounded by mangroves & palm trees, open air dockside dining doesn't get any better than this. It's an authentic island tiki shack - complete with palm thatch roog & Bamboo structure - serves uptropical fare by our native chefs. The open grills' aroma will beckon you to order our local chicken roti, fresh local catch, Caribbean lobster, Shrimp or one of our signiture burgers - in paradise that is! Big bamboo burger & seafood shack - it's what a tropical bar in paradise should be.... palm trees, Caribbean breeze, cold beers, island rum and mucis emanating in the background of Jimmy Buffet and Bob Marley.
+</p>
+				</div>
+			</div>
+			<div class="bf_page" id="menu">
+				<div class="bf_content_text">
+					<h2>Our Menu</h2>
+					<p>Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
+					<ul id="bf_dishes">
+						<li><a href="#"><img src="images/thumbs/1.jpg" alt="thumb1"/></a></li>
+						<li><a href="#"><img src="images/thumbs/2.jpg" alt="thumb2"/></a></li>
+						<li><a href="#"><img src="images/thumbs/3.jpg" alt="thumb3"/></a></li>
+						<li><a href="#"><img src="images/thumbs/4.jpg" alt="thumb4"/></a></li>
+						<li><a href="#"><img src="images/thumbs/5.jpg" alt="thumb5"/></a></li>
+						<li><a href="#"><img src="images/thumbs/6.jpg" alt="thumb6"/></a></li>
+					</ul>
+				</div>
+				<div id="bf_gallery" class="bf_gallery">
+					<a id="bf_close" href="#" class="bf_close"></a>
+					<div class="bf_nav">
+						<a id="bf_prev" href="#" class="bf_prev"></a>
+						<a id="bf_next" href="#" class="bf_next"></a>
+					</div>
+					<div class="bf_gallery_wrapper">
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Jalapeno Burger</h2></div>
+							<div class="bf_desc">
+								<p>Fresh ingredients and authentic flavours</p>
+							</div>
+							<img src="images/foreground/1.jpg" alt="image1" data-bgimg="images/background/1.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Grilled Chicken Wrap</h2></div>
+							<div class="bf_desc">
+								<p>Originality meets tradition</p>
+							</div>
+							<img src="images/foreground/2.jpg" alt="image1" data-bgimg="images/background/2.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Grilled Tuna Wrap</h2></div>
+							<div class="bf_desc">
+								<p>Dive into the balance of taste</p>
+							</div>
+							<img src="images/foreground/3.jpg" alt="image1" data-bgimg="images/background/3.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Famous Fish Tacos</h2></div>
+							<div class="bf_desc">
+								<p>The right intensity</p>
+							</div>
+							<img src="images/foreground/4.jpg" alt="image1" data-bgimg="images/background/4.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Tortelloni Alla Zucca</h2></div>
+							<div class="bf_desc">
+								<p>Incredibly tasty perfection</p>
+							</div>
+							<img src="images/foreground/5.jpg" alt="image1" data-bgimg="images/background/5.jpg" />
+						</div>
+						<div class="bf_gallery_item">
+							<div class="bf_heading"><h2>Calamaretti Fritti</h2></div>
+							<div class="bf_desc">
+								<p>Combine chunky and soft</p>
+							</div>
+							<img src="images/foreground/6.jpg" alt="image1" data-bgimg="images/background/6.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bf_page" id="visit">
+				
+			</div>
+            <div class="bf_page" id="saying">
+                <div class="bf_content_text_s">
+                  <h2>The Word</h2>
+					<div id="TA_selfserveprop728" class="TA_selfserveprop">
+<ul id="pvQq6w" class="TA_links Z44XKz">
+<li id="PMgHIdHzEB" class="MvKPotpKi4n">135 reviews of <a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g147404-d1625984-Reviews-Big_Bamboo_Seafood_Shack-St_Thomas_U_S_Virgin_Islands.html">Big Bamboo Seafood Shack</a> in St. Thomas</li>
+</ul>
+</div>
+<script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=728&amp;locationId=1625984&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=true"></script>
+              </div>
+		  </div>
+          </div>
+		</div>
+		<div class="bf_footer">
+			<a class="bf_left"><span>Where:</span>Big Bamboo: Burger & Seafood Shack</a>
+			<a href="http://www.facebook.com/Elisphotography"><strong>Barefoot Productions</strong></a>
+			<a>Design by</a>
+		</div>
+		<!-- The JavaScript -->
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.template.js"></script>
+    </body>
+</html>
